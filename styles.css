@@ -5,6 +5,7 @@ body {
     font-optical-sizing: auto;
     font-weight: normal;
     font-style: normal;
+    font-size: 16px;
 }
 
 header {
@@ -160,6 +161,7 @@ header ul li a:hover {
 
 .articles article p {
     margin: 0;
+    font-size: 16px;
 }
 
 .articles article .meta:after {
@@ -199,6 +201,10 @@ header ul li a:hover {
     grid-row-start: 1;
     grid-row-end: 4;
     border-radius: 6px;
+}
+
+.portfolio-list article .image img {
+    width: 100%;
 }
 
 .portfolio-list article h1 {
@@ -259,3 +265,35 @@ footer .copy {
     color: #21243D;
     font-size: 14px;
 }
+
+
+@media screen and (max-width: 980px) {
+    .about {
+        margin: 0 7%;
+    }
+
+    .about h1 {
+        font-size: 35px;
+    }
+
+    .posts {
+        padding: 20px 7%;
+    }
+
+    .articles article h1 {
+        font-size: 18px;
+    }
+
+    .articles article .meta {
+        font-size: 14px;
+    }
+
+    .articles article .meta {
+        gap: 18px;
+    }
+
+    .portfolio-list {
+        margin: 35px 7% 83px;
+    }
+}
+
